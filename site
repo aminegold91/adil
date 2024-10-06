@@ -166,24 +166,8 @@ nav .btn{
       
     </audio>
   </div>
-  
-  
-  
-  
-  
-  
-  
+
   <script>
-  
-  function onlod(){
-    let odio = document.getElementById('odio');
-    // odio=onplay();
-  }
-  onlod()
-  
-  
-  
-  
     let moq = document.querySelector('.moqadima');
     
     let d = document.querySelector('.d');
