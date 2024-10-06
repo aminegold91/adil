@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+  
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <!-- <link rel="stylesheet" href="adil.css"> -->
+  <style>
+    * {
+   padding: 0;
+   margin: 0;
+   box-shadow: border-box;
+   font-family: serif;
+ }
+ :root {
+   --d: #eee;
+   --a: #eee;
+ }
+ nav{
+  width: 100%;
+  height: 80px;
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  background: var(--a);
+  position: fixed;
+  z-index: 100;
+  margin-top: -80px;
+}
+nav .logo{
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  overflow: hidden;
+  background: #444;
+  margin-left: 15px;
+}
+nav .logo img {
+  width: 100%;
+}
+nav .btn{
+  width: 30px;
+  height: 30px;
+  background: #aaa;
+  margin-right: 15px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 15px;
+}
+.btn div{
+  width: 45px;
+  height: 2px;
+  background: #fff;
+  border-radius: 5px;
+  transition: .4s ease;
+}
+.btn .d.active{
+  transform: rotate(45deg);
+  width: 18px;
+  margin-bottom: -8px;
+  margin-right: -17px;
+  transition: .4s ease;
+}
+.btn .i.active{
+  display: none;
+}
+.btn .v.active {
+  transform: rotate(-45deg);
+    width: 18px;
+    margin-top: -8px;
+    margin-right: -17px;
+    transition: .4s ease;
+}
+.menu{
+  width: 450px;
+  height: 100%;
+  border: 1px solid;
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  top: 50%;
+  background: rgba(225, 225, 225, .8);
+  left: 50%;
+  transform: translate(-50%,-50%);
+  margin-left: 1024px;
+  transition: .3s ease;
+}
+
+.menu ul li{
+  padding: 10px;
+  list-style: none;
+  background: #fff;
+  margin: 10px;
+  box-shadow: 2px 2px 8px;
+  text-align: center;
+  width: 280px;
+}
+.menu ul li:nth-child(1){
+  background: #57C35F;
+}
+.menu ul li:nth-child(2) {
+  background: #207ECA;
+}
+.menu ul li:nth-child(3) {
+  background: linear-gradient(to left ,#B87633,#E440D3);
+}
+.menu ul li a{
+  text-decoration: none;
+  font-family: "El Messiri", sans-seri;
+  color: #fff;
+  font-weight: 900;
+  
+}
+.menu.active{
+  margin-left: 0;
+  transition: .3s ease;
+}
+.card{
+  margin-top: 80px;
+}
+  </style>
+</head>
+
+<body>
+  <nav>
+    <div class="logo" alt="adil_elassri">
+      <a href="https://www.instagram.com/p/DAi3_PnNTOl/?igsh=bWdrOGg1eHR3OGU=">
+        <img src="logo.jpg" alt="">
+      </a>
+    </div>
+    <div class="btn">
+      <div class="d"></div>
+      <div></div>
+      <div class="v"></div>
+    </div>
+  </nav>
+  <div class="menu">
+    <ul>
+      <li>
+        <a href="https://wa.me/+212670758948">
+          whatsApp
+        </a>
+      </li>
+      <li>
+        <a href="https://www.facebook.com/adil.elassri.9?mibextid=ZbWKwL">
+          facebook
+        </a>
+      </li>
+      <li>
+        <a href="https://www.instagram.com/adil_elassri?igsh=cTBjMncweXpvNXJo">
+          instagram
+        </a>
+      </li>
+
+    </ul>
+  </div>
+  <div class="card">
+    
+    <img src="3adil.jpg" width="100%" alt="">
+    <audio id="odio" controls hidden src="53.mp4">
+      
+    </audio>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  <script>
+  
+  function onlod(){
+    let odio = document.getElementById('odio');
+    // odio=onplay();
+  }
+  onlod()
+  
+  
+  
+  
+    let moq = document.querySelector('.moqadima');
+    
+    let d = document.querySelector('.d');
+    let i = document.querySelector('.i');
+    let v = document.querySelector('.v');
+    let menu = document.querySelector('.menu');
+    let btn = document.querySelector('.btn');
+    btn.onclick = function() {
+    
+      // moq.classList.toggle('active');
+      d.classList.toggle('active');
+      v.classList.toggle('active');
+      menu.classList.toggle('active');
+    }
+  </script>
+</body>
+</html>
